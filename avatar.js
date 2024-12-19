@@ -38,7 +38,7 @@ function setupScene(gltf) {
 
     container.appendChild(renderer.domElement);
 
-    // Camera setup
+    // Setting up camera
     const camera = new THREE.PerspectiveCamera(
       45, container.clientWidth / container.clientHeight);
     camera.position.set(0.2, 0.5, 1);
@@ -53,10 +53,10 @@ function setupScene(gltf) {
     controls.target = new THREE.Vector3(0, 0.75, 0);
     controls.update();
 
-    // Scene setup
+    // Setting up the scene
     const scene = new THREE.Scene();
 
-    // Lighting setup
+    // Lighting
     scene.add(new THREE.AmbientLight());
 
     const spotlight = new THREE.SpotLight(0xffffff, 20, 8, 1);
@@ -70,7 +70,7 @@ function setupScene(gltf) {
     keyLight.lookAt(new THREE.Vector3());
     scene.add(keyLight);
 
-    // Load avatar
+    // Avatar loading
     const avatar = gltf.scene;
     avatar.traverse((child) => {
       if (child.isMesh) {
@@ -80,8 +80,16 @@ function setupScene(gltf) {
     });
     scene.add(avatar);
 
+    // Create a stage
+    const groundGeometry = new THREE.CylinderGeometry(0.6, 0.6, 0.1, 64);
+    const groundMaterial = new THREE.MeshStandardMaterial();
+    const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
+    groundMesh.castShadow = false;
+    groundMesh.receiveShadow = true;
+    groundMesh.position.y -= 0.05;
+    scene.add(groundMesh);
     
-    // Load animations
+    // Animations loading
     const mixer = new THREE.AnimationMixer(avatar);
     const clips = gltf.animations;
     const waveClip = THREE.AnimationClip.findByName(clips, 'waving');
