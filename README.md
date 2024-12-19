@@ -2,18 +2,18 @@
 3D website/portfolio
 
 # Description 
-This project is meant to help people create a creative website/portfolio with 3D animated avatar of yourself! This project was created using Three.js, HTML, CSS, JavaScript, Blender. Specifically the 3D avatar was created using blender to combine the avatar and its animation.
+This project is meant to help people create a creative website/portfolio with 3D animated avatar of yourself! This project was created using Three.js, HTML, CSS, JavaScript, Blender. Specifically the 3D avatar was created using Blender to combine the avatar and its animation.
 
 # General steps/overview to create 3D avatar
-1. Go to avaturn at https://avaturn.me/ and then create your avatar and then download it under glb, remember to also download it under fbx so it could be upload to mixamo!
+1. Go to avaturn at https://avaturn.me/ and then create your avatar and then download it under .glb, remember to also download it under .fbx so it could be upload to mixamo!
 2. From there go to Mixamo at https://www.mixamo.com/#/  and find the animation you like.
-3. In Mixamo upload the file to the animation you chose the file should looks something like: "mesh_for_mixamo....fbx".
+3. In Mixamo upload the file to the animation you chose, the file should looks something like: "mesh_for_mixamo....fbx".
 4. If you wanted to use multiple animation like me then go ahead and pick another animation in step 2 and upload the file again like step 3. If you only want one animation just go ahead and skip this 4th step!
 5. Now you combine those above in blender app at https://www.blender.org/ .
-6. Now play around with blender and the animation and use the link to the website of blender for guidance!
+6. Play around with blender and the animation and use the link to the website of Blender for guidance!
 
 # Incorporate the avatar and the website 
-Congratulations on having your 3D avatar up and running, now it is the time for you to incorporate it into your personal website. You could clone my repositroy for reference!
+Congratulations on having your 3D avatar up and running, now it is the time for you to incorporate it into your personal website. You could clone my repository for reference! 
 
 # Future Improvements
 This is the first implementation of this project and just like anyone else I am just on the tip of the iceberg of graphic designing and Three.js's knowledge but still there are room for improvements and here are some example:
