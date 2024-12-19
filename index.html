@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/">
+  <title>Tom Hoang</title>
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@v0.158.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@v0.158.0/examples/jsm/"
+      }
+    }
+  </script>
+
+  <script type="module" src="/avatar.js"></script>
+  
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="public/pdf/resume.pdf" target="_blank" class="nav-button">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="home">
+            <div id='avatar-container'></div>
+                <div id='avatar-loading'></div>
+            <h1 class="hero-title">Hi guys 👉</h1>
+            <h1>I'm <span class='gradient-text'>Tom Hoang</span></h1>
+            <p>This is my 3D website, feel free to interact with my avatar above</p>
+        </section>
+        <section id="about">
+          <h1>About Me</h1>
+          <p> I am a computer science student with a strong interest in web development, 3D modeling, and software engineering.
+            I love solving problems and working on challenging projects.
+          </p>
+        </section>
+        <section id="contact">
+          <h1>Contact
+            <p>Feel free to reach out!</p>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/thonghoangg/" target="_blank">Linkedin</a></li>
+              <li><a href="https://github.com/thong2511" target="_blank">Github</a></li>
+            </ul>
+          </h1>
+        </section>
+    </div>
+</body>
+
