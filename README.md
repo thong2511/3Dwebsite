@@ -1,4 +1,8 @@
-# 3Dwebsite
+# 3DWebsite
 3D website/portfolio
 
-This projcet is created by using avaturn to animate your real life avatar and then use such avatar and apply animations to it with mixamo. Then you combine it in the blender app and use three.js, html, css to display it on your own website/portfolio
+# Description 
+This project is meant to help people create a creative website/portfolio.
+
+# General steps/overview
+First we have to create our avatar using avaturn at https://avaturn.me/ and then download it and upload to mixamo at https://www.mixamo.com/#/ then download animation and combine those above in blender app at https://www.blender.org/.The rest is up to your imagination as you get to customize your own website!
